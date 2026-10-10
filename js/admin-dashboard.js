@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const div = document.createElement("div");
         div.className = "admin-place-card";
         div.innerHTML = `
-       <img src="https://my-file-1-rjz1.onrender.com/uploads/${place.image}" alt="${place.name}" style="width:200px;height:120px;object-fit:cover;">
+       <img src="${place.image}" alt="${place.name}" style="width:200px;height:120px;object-fit:cover;">
           <h3>${place.name}</h3>
           <p>${place.description}</p>
           <button data-id="${place._id}" class="deleteBtn">Delete</button>
